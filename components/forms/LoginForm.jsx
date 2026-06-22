@@ -95,8 +95,6 @@ export default function LoginForm() {
       return;
     }
 
-    alert("Login Successful!");
-
     localStorage.setItem(
       "currentSession",
       JSON.stringify({
