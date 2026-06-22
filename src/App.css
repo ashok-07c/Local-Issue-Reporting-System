@@ -2279,36 +2279,109 @@ input[type="text"] {
 }
 
 .admin-users {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .admin-users h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .users-table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .users-table th,
 .users-table td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .users-table th {
-  background: #f1f5f9;
-  font-weight: 600;
+    background: #f1f5f9;
+    font-weight: 600;
 }
 
 .users-table td {
-  font-size: 14px;
-  color: #374151;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* 📱 RESPONSIVE MEDIA QUERIES */
+
+/* Large tablets / small desktops */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-section img {
+        max-width: 500px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .bold-txt {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .text-section {
+        margin-top: -60px;
+        text-align: center;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .report-form {
+        width: 90%;
+    }
+
+    .complaints-table th,
+    .complaints-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    .navbar,
+    .nav-links,
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .bold-txt {
+        font-size: 22px;
+    }
+
+    .banner-section img {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .report-form {
+        padding: 15px;
+    }
 }
